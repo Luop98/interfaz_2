@@ -23,7 +23,11 @@ class Myapp extends StatelessWidget{
               child: Column(  
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CircleAvatar(radius: 66.0,backgroundColor: Colors.grey,backgroundImage: NetworkImage("https://w0.peakpx.com/wallpaper/391/252/HD-wallpaper-among-us-icon-fondo-de-pantalla-icono.jpg"),),
+                  CircleAvatar(
+    radius: 90.0,
+    child: ClipRRect(
+        child: Image.asset('assets/images/mmm.jpg'),
+        borderRadius: BorderRadius.circular(180.0),),),
                   Divider(thickness: 1.5, color: Colors.white12,height: 100,),
                 Card(
                   margin: EdgeInsets.all(15.0),
